@@ -2,7 +2,7 @@
   src="https://github.com/ibrahimElsokkary/ibrahimElsokkary/blob/main/Images/backgound.gif?raw=true"
   alt="Alt text"
   title="Optional title"
-  style="display: inline-block; margin: 0 auto; max-width: 300px">
+  style="display: inline-block; margin: 0 auto;">
 
 ### Hi there 👋
 
