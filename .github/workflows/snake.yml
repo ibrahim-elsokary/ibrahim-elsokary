@@ -1,0 +1,39 @@
+# ─────────────────────────────────────────────────────────────────────────────
+#  Snake Contribution Animation — GitHub Actions Workflow
+#  Place this file at:  .github/workflows/snake.yml
+#  in your profile repo: ibrahim-elsokary/ibrahim-elsokary
+# ─────────────────────────────────────────────────────────────────────────────
+
+name: 🐍 Generate Contribution Snake
+
+on:
+  # Runs every 12 hours automatically
+  schedule:
+    - cron: "0 */12 * * *"
+  # Allows manual trigger from GitHub Actions tab
+  workflow_dispatch:
+
+jobs:
+  generate:
+    name: Generate Snake SVG
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+
+    steps:
+      - name: 🐍 Generate contribution snake SVG
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/github-contribution-grid-snake.svg
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+
+      - name: 🚀 Push SVGs to output branch
+        uses: crazy-max/ghaction-github-pages@v3.1.0
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
