@@ -131,10 +131,10 @@ quote:     "Write code that tells a story."
 
 <div align="center">
 
-<a href="https://github.com/ibrahim-elsokary">
+<!-- <a href="https://github.com/ibrahim-elsokary">
   <img height="175" src="https://github-readme-stats.vercel.app/api?username=ibrahim-elsokary&show_icons=true&theme=github_dark&include_all_commits=true&count_private=true&hide_border=true&bg_color=0a0e1a&title_color=00d4ff&icon_color=00d4ff&text_color=c9d1d9&ring_color=00d4ff"/>
   <img height="175" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ibrahim-elsokary&layout=compact&langs_count=8&theme=github_dark&hide_border=true&bg_color=0a0e1a&title_color=00d4ff&text_color=c9d1d9"/>
-</a>
+</a> -->
 
 <br/><br/>
 
@@ -149,7 +149,7 @@ quote:     "Write code that tells a story."
 <!-- ================================================================== -->
 <!--                       FEATURED PROJECTS                             -->
 <!-- ================================================================== -->
-
+<!--
 ### ❯ ls ./projects --pinned
 
 <div align="center">
@@ -172,8 +172,10 @@ quote:     "Write code that tells a story."
 
 </div>
 
----
+--- 
+ -->
 
+ظ/
 <!-- ================================================================== -->
 <!--                       ACTIVITY GRAPH                                -->
 <!-- ================================================================== -->
